@@ -233,5 +233,5 @@ main() {
   fi
 }
 
-trap `echo "Got cancelled.  Should cancel workflow number(s?) ${run_ids}"' SIGINT
+trap 'echo "Got cancelled.  Should cancel workflow number(s?) ${run_ids}"' SIGINT
 main
